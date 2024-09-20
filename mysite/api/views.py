@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from rest_framework import generics
-from .models import BLogPost
+from .models import BlogPost
 from .serializer import BlogPostSerializer
 
 
