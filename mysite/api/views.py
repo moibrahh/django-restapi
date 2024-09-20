@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from rest_framework import generics
 from .models import BLogPost
-
+from .serializer import BlogPostSerializer
 
 
 # Create your views here.
@@ -9,3 +9,4 @@ from .models import BLogPost
 
 class BlogPostListCreate(generics.ListCreateAPIViews):
     queryset = BlogPost.object.all()
+    serializer_class = BlogPostSerializer
